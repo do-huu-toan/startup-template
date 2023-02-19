@@ -1,0 +1,62 @@
+[2023/01/06 21:03:34] - [INFORMATIO] - [UserId: ] - [Class: Microsoft.Hosting.Lifetime] - [Line: ] - [Method: ] - Application started. Press Ctrl+C to shut down. 
+
+[2023/01/06 21:03:34] - [INFORMATIO] - [UserId: ] - [Class: Microsoft.AspNetCore.Hosting.Diagnostics] - [Line: ] - [Method: GET] - Request starting HTTP/1.1 GET https://localhost:44361/swagger - - 
+
+[2023/01/06 21:03:34] - [INFORMATIO] - [UserId: ] - [Class: Microsoft.Hosting.Lifetime] - [Line: ] - [Method: ] - Hosting environment: Development 
+
+[2023/01/06 21:03:34] - [INFORMATIO] - [UserId: ] - [Class: Microsoft.Hosting.Lifetime] - [Line: ] - [Method: ] - Content root path: D:\ASP.NET\Base\Sample\Sample 
+
+[2023/01/06 21:03:34] - [INFORMATIO] - [UserId: ] - [Class: Microsoft.AspNetCore.Hosting.Diagnostics] - [Line: ] - [Method: GET] - Request finished HTTP/1.1 GET https://localhost:44361/swagger - - - 301 - - 159.4102ms 
+
+[2023/01/06 21:03:34] - [INFORMATIO] - [UserId: ] - [Class: Microsoft.AspNetCore.Hosting.Diagnostics] - [Line: ] - [Method: GET] - Request starting HTTP/1.1 GET https://localhost:44361/swagger/index.html - - 
+
+[2023/01/06 21:03:35] - [INFORMATIO] - [UserId: ] - [Class: Microsoft.AspNetCore.Hosting.Diagnostics] - [Line: ] - [Method: GET] - Request finished HTTP/1.1 GET https://localhost:44361/swagger/index.html - - - 200 - text/html;charset=utf-8 95.5771ms 
+
+[2023/01/06 21:03:35] - [INFORMATIO] - [UserId: ] - [Class: Microsoft.AspNetCore.Hosting.Diagnostics] - [Line: ] - [Method: GET] - Request starting HTTP/1.1 GET https://localhost:44361/swagger/swagger-ui.css - - 
+
+[2023/01/06 21:03:35] - [INFORMATIO] - [UserId: ] - [Class: Microsoft.AspNetCore.Hosting.Diagnostics] - [Line: ] - [Method: GET] - Request starting HTTP/1.1 GET https://localhost:44361/swagger/swagger-ui-bundle.js - - 
+
+[2023/01/06 21:03:35] - [INFORMATIO] - [UserId: ] - [Class: Microsoft.AspNetCore.Hosting.Diagnostics] - [Line: ] - [Method: GET] - Request starting HTTP/1.1 GET https://localhost:44361/swagger/swagger-ui-standalone-preset.js - - 
+
+[2023/01/06 21:03:35] - [INFORMATIO] - [UserId: ] - [Class: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] - [Line: ] - [Method: ] - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+
+[2023/01/06 21:03:35] - [INFORMATIO] - [UserId: ] - [Class: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] - [Line: ] - [Method: ] - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+
+[2023/01/06 21:03:35] - [INFORMATIO] - [UserId: ] - [Class: Microsoft.AspNetCore.Hosting.Diagnostics] - [Line: ] - [Method: GET] - Request finished HTTP/1.1 GET https://localhost:44361/swagger/swagger-ui.css - - - 200 142933 text/css 59.0997ms 
+
+[2023/01/06 21:03:35] - [INFORMATIO] - [UserId: ] - [Class: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] - [Line: ] - [Method: ] - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+
+[2023/01/06 21:03:35] - [INFORMATIO] - [UserId: ] - [Class: Microsoft.AspNetCore.Hosting.Diagnostics] - [Line: ] - [Method: GET] - Request finished HTTP/1.1 GET https://localhost:44361/swagger/swagger-ui-standalone-preset.js - - - 200 311804 application/javascript 37.2234ms 
+
+[2023/01/06 21:03:35] - [INFORMATIO] - [UserId: ] - [Class: Microsoft.AspNetCore.Hosting.Diagnostics] - [Line: ] - [Method: GET] - Request finished HTTP/1.1 GET https://localhost:44361/swagger/swagger-ui-bundle.js - - - 200 986342 application/javascript 96.5131ms 
+
+[2023/01/06 21:03:35] - [INFORMATIO] - [UserId: ] - [Class: Microsoft.AspNetCore.Hosting.Diagnostics] - [Line: ] - [Method: GET] - Request starting HTTP/1.1 GET https://localhost:44361/_framework/aspnetcore-browser-refresh.js - - 
+
+[2023/01/06 21:03:35] - [INFORMATIO] - [UserId: ] - [Class: Microsoft.AspNetCore.Hosting.Diagnostics] - [Line: ] - [Method: GET] - Request finished HTTP/1.1 GET https://localhost:44361/_framework/aspnetcore-browser-refresh.js - - - 200 11970 application/javascript;+charset=utf-8 10.3798ms 
+
+[2023/01/06 21:03:36] - [INFORMATIO] - [UserId: ] - [Class: Microsoft.AspNetCore.Hosting.Diagnostics] - [Line: ] - [Method: GET] - Request starting HTTP/1.1 GET https://localhost:44361/swagger/v1/swagger.json - - 
+
+[2023/01/06 21:03:36] - [INFORMATIO] - [UserId: ] - [Class: Microsoft.AspNetCore.Hosting.Diagnostics] - [Line: ] - [Method: GET] - Request starting HTTP/1.1 GET https://localhost:44361/swagger/favicon-32x32.png - - 
+
+[2023/01/06 21:03:36] - [INFORMATIO] - [UserId: ] - [Class: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] - [Line: ] - [Method: ] - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A' 
+
+[2023/01/06 21:03:36] - [INFORMATIO] - [UserId: ] - [Class: Microsoft.AspNetCore.Hosting.Diagnostics] - [Line: ] - [Method: GET] - Request finished HTTP/1.1 GET https://localhost:44361/swagger/favicon-32x32.png - - - 200 628 image/png 2.5078ms 
+
+[2023/01/06 21:03:36] - [INFORMATIO] - [UserId: ] - [Class: Microsoft.AspNetCore.Hosting.Diagnostics] - [Line: ] - [Method: GET] - Request finished HTTP/1.1 GET https://localhost:44361/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 70.9792ms 
+
+[2023/01/06 21:03:57] - [INFORMATIO] - [UserId: ] - [Class: Microsoft.AspNetCore.Hosting.Diagnostics] - [Line: ] - [Method: GET] - Request starting HTTP/1.1 GET https://localhost:44361/api/Product - - 
+
+[2023/01/06 21:03:57] - [INFORMATIO] - [UserId: ] - [Class: Microsoft.AspNetCore.Routing.EndpointMiddleware] - [Line: ] - [Method: ] - Executing endpoint 'Sample.Controllers.ProductController.GetAllProduct (Sample)' 
+
+[2023/01/06 21:03:57] - [INFORMATIO] - [UserId: ] - [Class: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] - [Line: ] - [Method: ] - Route matched with {action = "GetAllProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Sample.Entity.Entities.Users.Product]] GetAllProduct() on controller Sample.Controllers.ProductController (Sample). 
+
+[2023/01/06 21:03:58] - [INFORMATIO] - [UserId: ] - [Class: Sample.Controllers.ProductController] - [Line: ] - [Method: ] - Begin GetAllProduct API 
+
+[2023/01/06 21:03:59] - [INFORMATIO] - [UserId: ] - [Class: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] - [Line: ] - [Method: ] - Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Sample.Entity.Entities.Users.Product, Sample.Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+
+[2023/01/06 21:03:59] - [INFORMATIO] - [UserId: ] - [Class: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] - [Line: ] - [Method: ] - Executed action Sample.Controllers.ProductController.GetAllProduct (Sample) in 1829.6229ms 
+
+[2023/01/06 21:03:59] - [INFORMATIO] - [UserId: ] - [Class: Microsoft.AspNetCore.Routing.EndpointMiddleware] - [Line: ] - [Method: ] - Executed endpoint 'Sample.Controllers.ProductController.GetAllProduct (Sample)' 
+
+[2023/01/06 21:03:59] - [INFORMATIO] - [UserId: ] - [Class: Microsoft.AspNetCore.Hosting.Diagnostics] - [Line: ] - [Method: GET] - Request finished HTTP/1.1 GET https://localhost:44361/api/Product - - - 200 - application/json;+charset=utf-8 1935.7846ms 
+
