@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Sample.Application.Services;
+using Sample.Host.ViewModels.Response;
 using Sample.Infratructure;
 using Sample.Infratructure.Services;
 using System;
@@ -22,15 +23,8 @@ namespace Sample.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(UserDto req)
         {
-            try
-            {
-                var result = await _userService.Create(req);
-                return Ok(result);
-            }
-            catch(Exception e)
-            {
-                return BadRequest(e.Message);
-            }
+            var result = await _userService.Create(req);
+            return Ok(new ResponseApi(result, true));
         }
     }
 }

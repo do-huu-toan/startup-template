@@ -19,7 +19,7 @@
 
   <ItemGroup>
     <Folder Include="Logs\" />
-    <Folder Include="Middlewares\" />
+    <Folder Include="ViewModels\Request\" />
   </ItemGroup>
 
   <ItemGroup>

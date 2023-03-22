@@ -9,6 +9,7 @@ using Newtonsoft.Json;
 using Sample.Application.Services;
 using Sample.Entity;
 using Sample.Host.Extensions;
+using Sample.Host.Middlewares;
 using Sample.Infratructure.Repositories;
 using System;
 using System.Linq;
@@ -28,6 +29,12 @@ namespace Sample
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
+            {
+                builder.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader();
+            }));
             services.AddDbContext<SampleDbContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("SampleDb")));
             services.AddControllers();
@@ -43,13 +50,13 @@ namespace Sample
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                //app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Sample v1"));
             }
             else
             {
-                app.UseDeveloperExceptionPage();
+                //app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Sample v1"));
             }
@@ -59,6 +66,8 @@ namespace Sample
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseMiddleware<ErrorHandlerMiddleware>();
 
             app.UseEndpoints(endpoints =>
             {
