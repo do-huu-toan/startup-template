@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sample.Core.Users
+namespace Sample.Infratructure.Repositories
 {
-    public interface IUserServices
+    public class UnitOfWork
     {
-        Task<int> Create(UserDto user);
     }
 }

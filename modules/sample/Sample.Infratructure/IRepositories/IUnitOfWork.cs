@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sample.Core.Repositories
+namespace Sample.Infratructure.IRepositories
 {
-    public interface IUserRepository
+    public interface IUnitOfWork
     {
-        Task<int> Create(UserDto user);
+        bool Commit();
+        void Dispose();
     }
 }
