@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sample.Infratructure.IRepositories
 {
-    public interface IUnitOfWork
+    public interface IUnitOfWork : IDisposable
     {
         bool Commit();
         void Dispose();
