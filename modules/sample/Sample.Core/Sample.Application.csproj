@@ -5,8 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Sample.Common\Sample.Shared.csproj" />
-    <ProjectReference Include="..\Sample.Entity\Sample.Entity.csproj" />
+    <ProjectReference Include="..\Sample.Infratructure\Sample.Infratructure.csproj" />
   </ItemGroup>
 
 </Project>

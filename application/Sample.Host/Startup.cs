@@ -1,26 +1,18 @@
-using AutoMapper;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json;
-using Sample.Core.Repositories;
-using Sample.Core.Services.Products;
-using Sample.Core.Users;
+using Sample.Application.Services;
 using Sample.Entity;
-using Sample.Infratructure.Repositories.Products;
-using Sample.Infratructure.Repositories.Users;
-using Sample.Infratructure.Services;
+using Sample.Host.Extensions;
+using Sample.Infratructure.Repositories;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
+using System.Reflection;
 
 namespace Sample
 {
@@ -43,19 +35,7 @@ namespace Sample
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Sample", Version = "v1" });
             });
-            //Automapper config
-            var mapperConfig = new MapperConfiguration(mc =>
-            {
-                mc.AddProfile(new MappingProfile());
-            });
-            IMapper mapper = mapperConfig.CreateMapper();
-            services.AddSingleton(mapper);
-            //Service:
-            services.AddScoped<IUserServices, UserService>();
-            services.AddScoped<IProductService, ProductService>();
-            //Repository:
-            services.AddScoped<IUserRepository, UserRepository>();
-            services.AddScoped<IProductRepository, ProductRepository>();
+            services.ConfigDI();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

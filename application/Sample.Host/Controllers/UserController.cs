@@ -1,7 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Sample.Core;
-using Sample.Core.Users;
+using Sample.Application.Services;
+using Sample.Infratructure;
+using Sample.Infratructure.Services;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -12,9 +13,9 @@ namespace Sample.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        private readonly IUserServices _userService;
+        private readonly IUserService _userService;
 
-        public UserController(IUserServices userService)
+        public UserController(IUserService userService)
         {
             _userService = userService;
         }
