@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using Sample.Application.IRepositories;
 using Sample.Application.Services;
 using Sample.Infratructure.Repositories;
 using Sample.Infratructure.Services;

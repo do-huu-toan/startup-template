@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "auth", "auth", "{1F0605B5-2
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Shared", "modules\sample\Sample.Common\Sample.Shared.csproj", "{25126CAE-138A-4277-A151-FE0BE0DE5879}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Application", "modules\sample\Sample.Core\Sample.Application.csproj", "{1784F93E-2E45-4BF9-914D-33F34F7DEB9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Core", "modules\sample\Sample.Core\Sample.Core.csproj", "{1784F93E-2E45-4BF9-914D-33F34F7DEB9F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Entity", "modules\sample\Sample.Entity\Sample.Entity.csproj", "{72F8269B-8E30-487C-971F-1C3C6B5AAC62}"
 EndProject

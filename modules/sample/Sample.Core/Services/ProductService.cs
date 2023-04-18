@@ -1,5 +1,6 @@
-﻿using Sample.Infratructure;
-using Sample.Infratructure.Repositories;
+﻿using Sample.Application.Dtos;
+using Sample.Application.IRepositories;
+using Sample.Infratructure;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 

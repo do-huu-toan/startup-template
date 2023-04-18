@@ -4,6 +4,8 @@ using Sample.Entity.Entities.Users;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System;
+using Sample.Application.IRepositories;
+using Sample.Application.Dtos;
 
 namespace Sample.Infratructure.Repositories
 {

@@ -23,7 +23,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\modules\sample\Sample.Core\Sample.Application.csproj" />
+    <ProjectReference Include="..\..\modules\sample\Sample.Core\Sample.Core.csproj" />
+    <ProjectReference Include="..\..\modules\sample\Sample.Infratructure\Sample.Infratructure.csproj" />
   </ItemGroup>
 
 </Project>

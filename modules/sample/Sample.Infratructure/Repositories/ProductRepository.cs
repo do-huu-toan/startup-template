@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Sample.Application.Dtos;
+using Sample.Application.IRepositories;
 using Sample.Entity;
 using Sample.Entity.Entities.Users;
 using System.Collections.Generic;

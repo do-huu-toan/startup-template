@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Sample.Core
+namespace Sample.Application.Dtos
 {
     public class ProductDto
     {

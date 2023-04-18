@@ -1,5 +1,6 @@
-﻿using Sample.Application.Services;
-using Sample.Infratructure.Repositories;
+﻿using Sample.Application.Dtos;
+using Sample.Application.IRepositories;
+using Sample.Application.Services;
 using System.Threading.Tasks;
 
 namespace Sample.Infratructure.Services

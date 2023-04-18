@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Sample.Application.Dtos;
 using Sample.Application.Services;
 using Sample.Host.ViewModels.Response;
 using Sample.Infratructure;

@@ -1,5 +1,5 @@
-﻿using Sample.Entity;
-using Sample.Infratructure.IRepositories;
+﻿using Sample.Application.IRepositories;
+using Sample.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;

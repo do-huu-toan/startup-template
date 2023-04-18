@@ -1,4 +1,5 @@
-﻿using Sample.Infratructure;
+﻿using Sample.Application.Dtos;
+using Sample.Infratructure;
 using System;
 using System.Collections.Generic;
 using System.Linq;
